@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="container">
           <div className={`flex ${isMobile ? 'flex-col' : 'flex-row gap-8'} items-center`}>
             {isMobile ? (
-              <div className="w-full bg-black text-white p-6">
+              <div className="w-full bg-black text-white md:p-6">
                 <div className="flex flex-col items-center mb-6">
                   <AudioWaveform 
                     className="w-[80px] h-auto text-tech-purple animate-wave" 
@@ -70,7 +70,7 @@ const Hero = () => {
                 <div className="space-y-4 text-center">
                   <h2 className="text-2xl font-bold">
                     Somos <span className="text-tech-purple">especializados</span>{" "}
-                    <br />na avaliação <br />de níveis de <br />ruído.
+                    na avaliação de níveis de ruído.
                   </h2>
                   <p className="text-gray-300 text-base">
                     Com equipamentos de alta precisão certificados pelo RBC e equipe qualificada, estamos aptos a elaborar relatórios técnicos de medição sonora para diferentes finalidades.
