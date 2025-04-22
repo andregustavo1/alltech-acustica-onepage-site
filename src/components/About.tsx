@@ -9,7 +9,7 @@ const About = () => {
           <div className="order-2 md:order-1">
             <div className="relative rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
+                src="/img/2.png" 
                 alt="Equipamentos de engenharia acústica"
                 className="w-full object-cover h-[400px]"
               />

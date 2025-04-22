@@ -29,15 +29,13 @@ const Header = () => {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
-        scrolled ? "bg-white shadow-sm" : "bg-transparent"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-",
+        scrolled ? "bg-black shadow-sm" : "bg-transparent"
       )}
     >
       <div className="container flex items-center justify-between">
-        <div className="flex items-center">
-          <h1 className="text-xl font-bold text-tech-purple">
-            AllTech<span className="text-tech-green">Acústica</span>
-          </h1>
+        <div className="flex items-center w-[150px] md:w-[175px]">
+          <img src="/img/logo.png" alt="" />
         </div>
         
         <nav className="hidden md:flex space-x-8 text-white">
@@ -53,7 +51,7 @@ const Header = () => {
               onClick={() => scrollToSection(item.id)}
               className={cn(
                 "hover:text-tech-purple transition-colors relative group",
-                scrolled ? "text-black" : "text-white"
+                scrolled ? "text-white" : "text-white"
               )}
             >
               {item.name}

@@ -6,15 +6,15 @@ const CallToAction = () => {
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Fundo com ondas sonoras estilizadas */}
-      <div className="absolute inset-0 bg-gradient-to-br from-tech-purple/10 to-tech-purple/5 z-0"></div>
+      <div className="absolute inset-0 bg-gray-900 z-0"></div>
       
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up text-white">
             Pronto para Transformar sua <span className="text-gradient">Experiência Acústica</span>?
           </h2>
           
-          <p className="text-lg text-gray-700 mb-10 animate-slide-up animate-delay-100">
+          <p className="text-lg text-gray-300 mb-10 animate-slide-up animate-delay-100">
             Solicite um orçamento e conheça nossas soluções especializadas
           </p>
           
