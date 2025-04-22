@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -50,7 +51,10 @@ const Header = () => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-white hover:text-tech-purple transition-colors relative group"
+              className={cn(
+                "hover:text-tech-purple transition-colors relative group",
+                scrolled ? "text-black" : "text-white"
+              )}
             >
               {item.name}
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-tech-purple transition-all duration-300 group-hover:w-full"></span>
