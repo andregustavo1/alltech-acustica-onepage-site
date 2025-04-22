@@ -29,7 +29,7 @@ const Header = () => {
     <header 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
-        scrolled ? "glass-effect shadow-sm" : "bg-transparent"
+        scrolled ? "bg-white shadow-sm" : "bg-transparent"
       )}
     >
       <div className="container flex items-center justify-between">
@@ -39,7 +39,7 @@ const Header = () => {
           </h1>
         </div>
         
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 text-white">
           {[
             { name: 'Início', id: 'home' },
             { name: 'Sobre', id: 'about' },
@@ -50,7 +50,7 @@ const Header = () => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-gray-800 hover:text-tech-purple transition-colors relative group"
+              className="text-white hover:text-tech-purple transition-colors relative group"
             >
               {item.name}
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-tech-purple transition-all duration-300 group-hover:w-full"></span>
