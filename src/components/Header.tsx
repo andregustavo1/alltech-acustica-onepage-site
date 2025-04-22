@@ -1,11 +1,9 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  // Gerencia o efeito de transparência do header ao scroll
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -18,10 +16,8 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
 
-  // Link para WhatsApp
   const whatsappLink = "https://wa.me/5544999447511";
   
-  // Função para navegar para uma seção
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -68,7 +64,7 @@ const Header = () => {
           rel="noopener noreferrer"
           className="btn btn-primary text-sm md:text-base"
         >
-          Solicitar Orçamento
+          Contate-nos
         </a>
       </div>
     </header>

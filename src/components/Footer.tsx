@@ -1,6 +1,7 @@
 
+import { Phone, Mail, MapPin } from 'lucide-react';
+
 const Footer = () => {
-  // Função para voltar ao topo da página
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -48,15 +49,15 @@ const Footer = () => {
             <h4 className="text-lg font-medium mb-4">Contato</h4>
             <ul className="space-y-3">
               <li className="flex items-center text-gray-400">
-                <span className="mr-2">📱</span>
+                <Phone className="mr-2 text-tech-purple" size={20} />
                 (44) 9 9944-7511
               </li>
               <li className="flex items-center text-gray-400">
-                <span className="mr-2">✉️</span>
+                <Mail className="mr-2 text-tech-purple" size={20} />
                 alltechocupacional2@gmail.com
               </li>
               <li className="flex items-center text-gray-400">
-                <span className="mr-2">📍</span>
+                <MapPin className="mr-2 text-tech-purple" size={20} />
                 Maringá/PR
               </li>
             </ul>

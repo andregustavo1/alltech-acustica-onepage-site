@@ -1,24 +1,26 @@
 
+import { Check, Package, Award, Zap } from 'lucide-react';
+
 const features = [
   {
     title: "Precisão Técnica",
     description: "Medições rigorosas conforme normas vigentes",
-    icon: "📊",
+    icon: Check,
   },
   {
     title: "Soluções Completas",
     description: "Do diagnóstico à implementação de projetos acústicos",
-    icon: "🔄",
+    icon: Package,
   },
   {
     title: "Experiência Comprovada",
     description: "Expertise em diversos tipos de ambientes",
-    icon: "🏆",
+    icon: Award,
   },
   {
     title: "Tecnologia Avançada",
     description: "Equipamentos de última geração para medições precisas",
-    icon: "🔬",
+    icon: Zap,
   },
 ];
 
@@ -34,17 +36,22 @@ const Features = () => {
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {features.map((feature, index) => (
-            <div 
-              key={feature.title}
-              className="bg-white rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up"
-              style={{ animationDelay: `${(index + 2) * 100}ms` }}
-            >
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-medium mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </div>
-          ))}
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div 
+                key={feature.title}
+                className="bg-white rounded-xl p-6 shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up"
+                style={{ animationDelay: `${(index + 2) * 100}ms` }}
+              >
+                <div className="text-4xl mb-4 text-tech-purple">
+                  <Icon size={40} />
+                </div>
+                <h3 className="text-xl font-medium mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
